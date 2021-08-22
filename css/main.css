@@ -112,3 +112,26 @@ body{
 .slogan{
     text-align: center;
 }
+
+.top{
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/* contact page*/
+.header_contact{
+    background-image: url(/imgs/images.jpg);
+    height: 100px;
+    background-size: cover;
+    
+}
+
+.main_contact{
+    margin-left: 40px;
+}
+
+.grid_contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
