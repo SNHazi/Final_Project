@@ -29,29 +29,24 @@ body{
     color: white;
 }
 
-.mobile-bar{
+.mobile-bar-cta{
     display:none;
 }
 
 @media (min-width: 300px) and (max-width: 650px) {
-    .mobile-bar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .mobile-bar-cta {
+        display: block;
+        position: relative;
+        /* align-items: center;
+        justify-content: space-between; */
         margin-right: 0.5rem;
-    }
-
-    #mobile-bar-cta {
         font-size: 1.5rem;
     }
 
     .topnav{
         display: none;
+        
     }
-
-    
-    
-    
 }
 
 

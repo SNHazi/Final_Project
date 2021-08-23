@@ -1,19 +1,30 @@
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+// document.querySelector(".mobile-bar-cta").addEventListener("click",function(){
+//   let a = document.querySelector(".topnav")
+
+//   if (a.style.display == "none") {
+//       a.style.display = "block";
+//   } else {
+//       a.style.display = "none";
+//   }
+// })
+
+document.querySelector("button").addEventListener("click", function(){
+  document.querySelector(".topnav").style.display = "block"
+})
+
+
+
+// document.querySelector(".mobile-bar-cta").addEventListener("click", function() {
+//   document.querySelector(".topnav").style.display = "block";
+ 
+  
+// })
 
 
 
 
 
 
-
-//CONTACT
 document.querySelector("#submit").addEventListener("click", function (e) {
     //dont do default behaviour
     e.preventDefault();
@@ -40,7 +51,7 @@ document.querySelector("#submit").addEventListener("click", function (e) {
     if (lastname.length < 2) {
       document.querySelector("#label-lastname").classList.add("error");
     }*/
-  });
+  }),
 
   function validate(field) {
     //field
@@ -49,4 +60,6 @@ document.querySelector("#submit").addEventListener("click", function (e) {
     if (field.value.length < 2) {
       document.querySelector("#label-" + fieldName).classList.add("error");
     }
-  }
+  
+}
+
