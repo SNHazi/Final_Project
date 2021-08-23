@@ -11,7 +11,7 @@
   <body>
 
     <header class="header_contact">
-        <div>
+        <div class="cntact flex">
             <h2>Contact</h2>
         </div>
     </header>
@@ -24,55 +24,53 @@
                     <p>Welcome to ChoChoc customer service. We are always ready to help.</p>
                 </div>
 
-                <div>
+                <div class="address">
                     <p>ADDRESS:</p>
                 </div>
 
-                <div>
+                <div class="detail_address">
                     <p>Chocho Sdn Bhd (650332-U)</p>
                     <p>2, Jalan Raya 7/1,</p>
                     <p>Kawasan Perindustrian Seri Kembangan,</p>
                     <p>43300 Seri Kembangan</p>
                     <p>Selangor Darul Ehsan, Malaysia.</p>
                 </div>
-            </div>
-            <div id="Q-form" class="row Q-margin40">
-                <h2>Leave Us a Message</h2>
-                <div class="col-md-4 col-md-offset-2">
-                <form role="form">
-                    <div class="form-group Q-animate Q-sequence-slow">
-                    <input id="Q-form-name" type="text" class="form-control" placeholder="Your Name" data-toggle="popover" data-placement="left" data-content="Missing" data-trigger="manual">
-                    <input id="Q-form-website" type="text" class="form-control required" data-trigger="manual" style="display: none;">
-                    </div>
-                    <div class="form-group Q-animate Q-sequence-slow">
-                    <input id="Q-form-email" type="email" class="form-control" placeholder="Your Email" data-toggle="popover" data-placement="left" data-content="Missing" data-trigger="manual">
-                    </div>
-                    <div class="form-group Q-animate Q-sequence-slow">
-                    <input id="Q-form-subject" type="text" class="form-control" placeholder="Subject" data-toggle="popover" data-placement="left" data-content="Missing" data-trigger="manual">
-                    </div>
-                </form>
-                </div>
-                <div class="col-md-4">
-                <form role="form">
-                    <div class="form-group Q-animate Q-sequence-slow">
-                    <textarea id="Q-form-message" class="form-control Q-message" placeholder="Message" rows="3" data-toggle="popover" data-placement="right" data-content="Missing" data-trigger="manual"></textarea>
-                    </div>
-                    <div id="Q-form-send" class="btn btn-default center-block Q-submit Q-animate-slow Q-sequence-slow">Submit</div>
-                    <div class="modal fade bs-example-modal-sm" id="submit" tabindex="-1" role="dialog" aria-hidden="true" style="overflow: hidden; outline: none;">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                        <div class="modal-body"></div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </form>
-                <p>I can also be reached at zizi@chochoc.com</p>
+
+                <div class="contact_info">
+                    <p> Tel: +(60)3-8943 6136 </p>
+                    <p> Fax: +(60)3-8958 6021</p>                  
+                    <p> Email: Chocho@chocolate.com</p>    
+                    
                 </div>
             </div>
 
+            <form>
+
+                <h2>Leave Us a Message</h2>
+                <div id="label-yourName">
+                  <input name="firstname" id="firstname" type="text" placeholder="Your Name" />
+                </div>
+                <div id="label-yourEmail">
+                  <input name="youremail" id="youremail" type="text" placeholder="Your Email" />
+                </div>
+    
+                <div id="label-gender">
+                  <label>Gender</label>
+                  <input name="gender" type="radio" value="male" /> Male
+                  <input name="gender" type="radio" value="female" /> Female
+                </div>
+    
+                <div id="label-message">
+                  <label>Write your message here:</label>
+                  <textarea
+                    placeholder="Write message here"
+                    id="message"
+                    name="message"
+                    type="text"
+                  ></textarea>
+                </div>
+                <button type="submit" id="submit">Send</button>
+            </form>
         </div>
 
     </main>
