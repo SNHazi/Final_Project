@@ -12,6 +12,7 @@ function myFunction() {
 
 
 
+
 //CONTACT
 document.querySelector("#submit").addEventListener("click", function (e) {
     //dont do default behaviour
