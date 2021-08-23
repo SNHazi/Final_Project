@@ -8,12 +8,15 @@ body{
     background-size: cover;
 }
 
+
 .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    
 }
+
 
 .header_contain h2{
     padding-left: 50px;
@@ -25,6 +28,8 @@ body{
     text-decoration: none;
     color: white;
 }
+
+
 
 .vision_container{
     text-align: center;
@@ -115,6 +120,7 @@ body{
 
 /* ABOUT */
 .top_contain{
+    background-color: chocolate;
     text-align: center;
     padding-top: 20px;
 }
@@ -138,9 +144,11 @@ body{
     margin: 100px;
 }
 
+
+
 .grid_about{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .box_ab{
@@ -151,10 +159,9 @@ body{
 
 /* contact page*/
 .header_contact{
-    background-image: url(/imgs/contact.jpg);
-    height: 500px;
+    background-image: url(/imgs/bg_contact.jpg);
+    height: 220px;
     background-size: cover;
-    margin: 10px;
     color: wheat;
 }
 
@@ -166,6 +173,7 @@ body{
 }
 
 .main_contact{
+    margin-top: 40px;
     margin-left: 40px;
     margin-bottom: 100px;
 }
@@ -187,6 +195,8 @@ body{
     margin-top: 50px;
     margin-left: 50px;
 }
+
+
 
 /* form */
 input[type=text], select {
@@ -212,4 +222,43 @@ input[type=text], select {
   
   input[type=submit]:hover {
     background-color: #45a049;
+  }
+
+  /*Services*/
+  .header_services{
+    background-image: url(/imgs/bg_services.jpg);
+    height: 600px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 90px;
+  }
+
+  .services_top{
+      color: white;
+  }
+
+  .grid_services{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 10px;
+  }
+
+  .text_services{
+      color: white;
+  }
+
+  .contain_services{
+      padding-top: 50px;
+      margin: 50px;
+      border: 1px solid white;
+      height: 300px;
+      color: white;
+  }
+
+  .services__{
+      margin: 100px;
+      text-align: center;
   }
