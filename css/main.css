@@ -47,8 +47,16 @@ body{
         display: none;
         
     }
+    
 }
 
+.flavour p{
+    color: black;
+}
+
+p::selection{
+    background-color: yellow;;
+}
 
 .vision_container{
     text-align: center;
